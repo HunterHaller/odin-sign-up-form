@@ -1,50 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>The Odin Project Form</title>
 </head>
+
 <body>
     <div id="left-column">
-        <img src="bg.jpg" alt="background photo of leafy fronds">
-        <div id="logo-background"> <!--This is the transparent black background that help the logo stand out.-->
+        <!--<img src="bg.jpg" alt="background photo of leafy fronds">-->
+        <div id="logo-background">
+            <!--This is the transparent black background that help the logo stand out.-->
             <img src="odin-logo.png" alt="odin icon">
             <h1 id="logo-text">ODIN</h1>
         </div>
-        <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com">Unsplash</a></p>
+        <p id="photo-footer">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a
+                href="https://unsplash.com">Unsplash</a></p>
     </div>
     <div id="right-column">
-        <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h2>
+        <h2 id="top-text">This is not a real online service! You know you need something like this in your life to help you realize
+            your deepest dreams. Sign up <em>now</em> to get started.</h2>
         <h2>You <em>know</em> you want to.</h2>
         <h2><br>Let's do this!</h2>
 
         <form action="" method="post">
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" name="first-name" placeholder="Jimbo">
+            <fieldset id="inputs">
 
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" name="last-name" placeholder="McHalsenberry">
+                <div class="input-block">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Jimbo">
+                </div>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="jimbo@securemail.gov">
+                <div class="input-block">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="McHalsenberry">
+                </div>
 
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone">
+                <div class="input-block">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" placeholder="jimbo@securemail.gov">
+                </div>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="********">
+                <div class="input-block">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
 
-            <label for="password-confirm">Confirm Password</label>
-            <input type="password" id="password-confirm" name="password-confirm">
+                <div class="input-block">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password" placeholder="********">
+                </div>
+
+                <div class="input-block">
+                    <label for="password-confirm">CONFIRM PASSWORD</label>
+                    <input type="password" id="password-confirm" name="password-confirm">
+                </div>
+            </fieldset>
 
             <!--There's a line with like a dropshadow here...-->
 
-            <button type="submit">Create Account</button>
+            <fieldset id="submit-buttons">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </fieldset>
 
-            <p>Already have an account? <a href="">Log in</a></p>
         </form>
     </div>
 </body>
+
 </html>

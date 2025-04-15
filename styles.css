@@ -1,6 +1,16 @@
 @import url('https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf');
 
-:root{
+@font-face {
+    font-family: "Norse Bold";
+    src: url("Norse-Bold.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
     --create-account-color: #596D48;
     --input-border-default: #E5E7EB;
     --input-border-invalid: red;
@@ -8,6 +18,115 @@
     --input-selected: blue;
 }
 
-#logo-text{
-    font-family: "Norse Bold", 'Times New Roman', Times, serif;
+body, html {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#left-column {
+    margin: 0;
+    padding: 0;
+
+    height: 100%;
+    width: 800px;
+
+    background-image: url("bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo-background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+    position: relative;
+    top: 20%;
+
+    height: 10vw;
+    width: 33vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-background img{
+    object-fit: contain;
+    height: 100%;
+}
+
+#logo-text {
+    font-family: "Norse Bold";
+    color: white;
+}
+
+#photo-footer {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 83%;
+}
+
+#photo-footer a {
+    color: white;
+}
+
+#right-column {
+    padding-left: 1rem;
+    height: 100%;
+}
+
+#top-text {
+    padding-top: 15vw;
+}
+
+#inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    box-shadow: 0px 2px 6px -2px gray;
+}
+
+.input-block{
+    min-width: 200px;
+}
+
+input {
+    display: block;
+}
+
+input:focus{
+    border: 2px solid Blue;
+    box-shadow: 1px 1px 3px;
+}
+
+input:invalid{
+    border: 2px solid var(--input-border-invalid);
+}
+
+input:valid{
+    border: var(--input-border-valid);
+}
+
+fieldset {
+    border: none;
+}
+
+label{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.7rem;
+}
+
+button {
+    margin-top: 20px;
+    background-color: var(--create-account-color);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    width: 15rem;
+    height: 3rem;
 }
