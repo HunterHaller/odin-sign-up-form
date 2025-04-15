@@ -31,7 +31,7 @@ body, html {
     padding: 0;
 
     height: 100%;
-    width: 800px;
+    width: 40%;
 
     background-image: url("bg.jpg");
     background-position: center;
@@ -45,8 +45,7 @@ body, html {
     position: relative;
     top: 20%;
 
-    height: 10vw;
-    width: 33vw;
+    height: 17%;
 
     display: flex;
     justify-content: center;
@@ -61,13 +60,15 @@ body, html {
 #logo-text {
     font-family: "Norse Bold";
     color: white;
+    font-size: 4rem;
 }
 
 #photo-footer {
     color: white;
     text-align: center;
     position: relative;
-    top: 83%;
+    top: 95%;
+    font-size: 0.8rem;
 }
 
 #photo-footer a {
@@ -77,10 +78,11 @@ body, html {
 #right-column {
     padding-left: 1rem;
     height: 100%;
+    width: 60%;
 }
 
 #top-text {
-    padding-top: 15vw;
+    padding-top: 10vw;
 }
 
 #inputs {
@@ -89,27 +91,32 @@ body, html {
     justify-content: space-around;
     gap: 10px;
     box-shadow: 0px 2px 6px -2px gray;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    max-width: 80%;
 }
 
 .input-block{
-    min-width: 200px;
+    min-width: 40%;
 }
 
 input {
     display: block;
+    border: 2px solid gray;
+    height: 30px;
 }
 
 input:focus{
-    border: 2px solid Blue;
+    outline-color: blue;
     box-shadow: 1px 1px 3px;
 }
 
-input:invalid{
+input.validate-me:invalid{
     border: 2px solid var(--input-border-invalid);
 }
 
-input:valid{
-    border: var(--input-border-valid);
+input.validate-me:valid{
+    border: 2px solid var(--input-border-valid);
 }
 
 fieldset {
@@ -123,6 +130,7 @@ label{
 
 button {
     margin-top: 20px;
+    margin-bottom: 20px;
     background-color: var(--create-account-color);
     border: none;
     border-radius: 10px;
