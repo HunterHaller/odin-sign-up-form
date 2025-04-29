@@ -1,2 +1,2 @@
 # odin-sign-up-form
- A sign-up form projet, as assigned in The Odin Project.
+ A sign-up form project, as assigned in The Odin Project.
